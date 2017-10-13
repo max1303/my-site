@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>My site</title>
+	<meta name="author" content="Maxym Molodetskiy, Ann Levkovec" />
+	<meta name="description" content="fullPage site" />
+	<meta name="keywords"  content="cool site" />
+	<meta name="Resource-type" content="Document" />
+
+	<link rel="stylesheet" type="text/css" href="library/jquery.fullPage.css" />
+	<link rel="stylesheet" type="text/css" href="css/reset.css" />
+	<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+
+	<script type="text/javascript" src="library/jquery.localize.min.js" ></script>
+	<script type="text/javascript" src="library/jquery.fullPage.min.js"></script>
+	<script type="text/javascript" src="script/script.js"></script>
+
+</head>
+<body>
+
+<div id="fullpage">
+	<div class="section active" id="section0">
+		<div class="intro">
+			<ul id="menu">
+				<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
+				<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
+				<li data-menuanchor="4thpage"><a href="#4thpage">Fourth slide</a></li>
+			</ul>
+			<div class="localize-wrapper">
+				<button class="localize-ua" data-localize="btnUA"></button>
+				<button class="localize-ru" data-localize="btnRU"></button>
+			</div>
+			<!-- <h1 data-localize="tittle"></h1> -->
+		</div>
+	</div>
+	<div class="section" id="section1">
+		<div class="intro">
+			<div id="tabs">
+			    <ul>
+			        <li>
+			            <a href="#a">Tab A</a>
+			        </li>
+			        <li>
+			            <a href="#b">Tab B</a>
+			        </li>
+			        <li>
+			            <a href="#c">Tab C</a>
+			        </li>
+			        <li>
+			            <a href="#d">Tab D</a>
+			        </li>
+			    </ul>
+			    
+			   <div id="a">
+			        Content of A
+			    </div>
+			    <div id="b">
+			        Content of B
+			    </div>
+			    <div id="c">
+			        Content of C
+			    </div>
+			    <div id="d">
+			        Content of D
+			    </div>
+			</div>
+		</div>		
+	</div>
+	<div class="section" id="section2">
+		<div class="intro">
+			<h1>Example</h1>
+			<p>HTML markup example to define 4 sections.</p>
+		</div>
+	</div>
+	<div class="section" id="section3">
+		<div class="intro">
+			<h1>Working On Tablets</h1>
+			<p>
+				Designed to fit to different screen sizes as well as tablet and mobile devices.
+			</p>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript" charset="utf-8">
+      $(function(){
+
+      	$('#tabs')
+	    .tabs()
+	    .addClass('ui-tabs-vertical ui-helper-clearfix');
+
+        var opts = { language: "ru", pathPrefix: "i18n", skipLanguage: "en-US" };
+        if(1){
+        	opts = { language: "ua", pathPrefix: "i18n", skipLanguage: "en-US" };
+        }
+        $("[data-localize]").localize("lang",opts)
+      })
+</script>
+	
+</body>
+</html>

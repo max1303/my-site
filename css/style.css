@@ -1,0 +1,155 @@
+/* Custom CSS
+ * --------------------------------------- */
+body{
+	font-family: arial,helvetica;
+	color: #333;
+	color: rgba(0,0,0,0.5);
+	background: url(../images/bg.jpg) repeat-y;
+	background-size: cover;
+}
+.fp-viewing-firstPage .intro{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.intro{
+	height: 100%;
+}
+/* #section0{
+	background: url(../images/bg1.jpg) 0/50% no-repeat;
+	background-size: 100%;
+}
+#section1{
+	background: url(../images/bg2.jpg) 0/73% no-repeat;
+	background-size: 100% 101%;
+}
+#section2{
+	background: url(../images/bg2.jpg) 0/50% no-repeat;
+	background-size: 100%;
+}
+#section3{
+	background: url(../images/bg2.jpg) 0/50% no-repeat;
+	background-size: 100%;
+} */
+.localize-wrapper{
+	position: absolute;
+	right: 20px;
+	top: 20px;
+	z-index: 1;
+}
+.wrap{
+	margin-left: auto;
+	margin-right: auto;
+	width: 960px;
+	position: relative;
+}
+h1{
+	font-size: 6em;
+}
+p{
+	font-size: 2em;
+}
+.intro p{
+	width: 50%;
+	margin: 0 auto;
+	font-size: 1.5em;
+}
+.section{
+	text-align:center;
+}
+#menu li {
+	display:inline-block;
+	margin: 10px;
+	color: #000;
+	background:#fff;
+	background: rgba(255,255,255, 0.5);
+	-webkit-border-radius: 10px;
+            border-radius: 10px;
+}
+#menu li.active{
+	background:#666;
+	background: rgba(0,0,0, 0.5);
+	color: #fff;
+}
+#menu li a{
+	text-decoration:none;
+	color: #000;
+}
+#menu li.active a:hover{
+	color: #000;
+}
+#menu li:hover{
+	background: rgba(255,255,255, 0.8);
+}
+#menu li a,
+#menu li.active a{
+	padding: 9px 18px;
+	display:block;
+}
+#menu li.active a{
+	color: #fff;
+}
+#menu{
+	opacity: 0;
+}
+.fp-viewing-firstPage #menu{
+	transition: opacity 1s ease-out 0.5s;
+	opacity: 1;
+	height: 40px;
+	z-index: 70;
+	padding: 0;
+	margin: 0;
+	margin-top: 280px;
+}
+/* Tab gtoup */
+
+.ui-tabs.ui-tabs-vertical {
+    padding: 0;
+    width: 42em;
+}
+.ui-tabs.ui-tabs-vertical .ui-widget-header {
+    border: none;
+}
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav {
+    float: left;
+    width: 10em;
+    background: #CCC;
+    border-radius: 4px 0 0 4px;
+    border-right: 1px solid gray;
+}
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav li {
+    clear: left;
+    width: 100%;
+    margin: 0.2em 0;
+    border: 1px solid gray;
+    border-width: 1px 0 1px 1px;
+    border-radius: 4px 0 0 4px;
+    overflow: hidden;
+    position: relative;
+    right: -2px;
+    z-index: 2;
+}
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav li a {
+    display: block;
+    width: 100%;
+    padding: 0.6em 1em;
+}
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav li a:hover {
+    cursor: pointer;
+}
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav li.ui-tabs-active {
+    margin-bottom: 0.2em;
+    padding-bottom: 0;
+    border-right: 1px solid white;
+}
+.ui-tabs.ui-tabs-vertical .ui-tabs-nav li:last-child {
+    margin-bottom: 10px;
+}
+.ui-tabs.ui-tabs-vertical .ui-tabs-panel {
+    float: left;
+    width: 28em;
+    border-left: 1px solid gray;
+    border-radius: 0;
+    position: relative;
+    left: -1px;
+}
