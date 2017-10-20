@@ -10,12 +10,54 @@ body{
 	background-blend-mode: color;
 	background-size: cover;
 }
+.logo-wrapper{
+	position: absolute;
+	top: 66px;
+	left: 40px;
+	width: 290px;
+	height: 60px;
+}
+.logo-img{
+	width: 45px;
+	height: 45px;
+	background: url(../images/logo.png) 50% 50% no-repeat;
+	background-size: contain;
+	float: left;
+}
+.text1, .text2{
+	position: absolute;
+	color: #fff;
+}
+.text1{
+	font-size: 36px;
+	left: 140px;
+	font-weight: bold;
+	top: 234px;
+	letter-spacing: -0.5px;
+	text-align: right;
+}
+
+.text2{
+	font-size: 36px;
+	right: 101px;
+	top: 261px;
+	font-weight: bold;
+}
+.logo-text{
+	
+margin-left: 70px;
+	
+font-size: 50px;
+	
+color: #fff;
+}
 .intro{
 	height: 100%;
 }
 #section0{
-	background: url(../images/1.png) 0px 0px no-repeat;
-	background-size: cover;
+	background: #fff;
+	/* background: url(../images/1.png) 50% 50% no-repeat;
+	background-size: contain; */
 }
 #section1{
 	background: url(../images/bg2.jpg) 0/73% no-repeat;
@@ -30,30 +72,32 @@ body{
 	background-size: 100%;
 }
 #fp-nav ul li a span, .fp-slidesNav ul li a span{
-	background: #574981;
+	background: #b4b5bf;
 }
 .intro .tel{
 	position: absolute;
-	top: 3px;
-	right: 20px;
+	top: 66px;
+	right: 40px;
 	line-height: 1.2;
-	font-size: 1.1em;
-	font-weight: bold;
-	color: #d0e8ec;
+	font-size: 1.5em;
+	/* font-weight: bold; */
+	color: #ffffff;
+	font-style: italic;
 }
 .localize-wrapper{
 	position: absolute;
 	left: 20px;
 	top: 14px;
 	z-index: 1;
+	display: none;
 }
 .localize-wrapper > button{
 	background: none;
 	border: none;
 	outline: none;
 	font-weight: bold;
-	font-size: 1em;
-	color: #d0e8ec;
+	font-size: 1.5em;
+	color: #ffffff;
 	opacity: 0.8;
 }
 .localize-wrapper > button.active{
@@ -84,18 +128,18 @@ p{
 	position: absolute;
 	left: 0px;
 	top: 0px;
-	height: 6%;
+	height: 63%;
 	width: 100%;
-	/* background: url(../images/header-background.png) no-repeat; */
-	background-size: cover;
+	background: url(../images/1.png) 50% 50% no-repeat;
+	background-size: contain;
 	z-index: 0;
-	/* background-color: #d0e8ec; */
+	background-color: #3f405a;
 }
 .slogan{
 	
 text-transform: uppercase;
 	
-font-size: 2em;
+font-size: 2.5em;
 	
 text-align: center;
 	
@@ -105,26 +149,84 @@ display: block;
 	
 width: 100%;
 	
-top: 38%;
+top: 53%;
+	
+font-weight: bold;
+	
+color: #FFF;
 }
 .logo{
 	position: absolute;
-	left: 3%;
-	top: 6%;
-	background:url(../images/logo.png) no-repeat;
-	width: 5%;
+	left: 4%;
+	top: 14%;
+	/* background:url(../images/logo.png) no-repeat; */
+	width: 11%;
 	height: 23%;
 	background-size:contain;
 	z-index: 11;
 }
+.menu-list.second{
+	left: 20px;
+}
+.menu-list{
+	position: absolute;
+	top: 149px;
+	left: 32px;
+}
+.menu-list span:before{
+	content: "-";
+	position: absolute;
+	left: -9px;
+	top: 0px;
+}
+.menu-list span{
+	position: relative;
+	display: block;
+	margin-bottom: 2px;
+	font-size: 17px;
+	color: #5c5c5c;
+}
+
 #menu li {
+	position: relative;
+	width: 280px;
+	height: 160px;
 	display:inline-block;
 	margin: 10px;
 	color: #000;
 	background:#fff;
-	background: rgba(255,255,255, 0.5);
+	background: rgb(87, 73, 129);
 	-webkit-border-radius: 10px;
-            border-radius: 10px;
+	border-radius: 10px;
+}
+#menu li:first-of-type {
+	background:url(../images/icon2.png) no-repeat;
+	background-size: contain;
+}
+#menu li:first-of-type a{
+left: 14px;
+}
+#menu li:nth-of-type(2) a{
+	
+left: 4px;
+	
+font-size: 21px;
+}
+#menu li:first-of-type a,
+#menu li:nth-of-type(2) a{top: 122px;}
+#menu li:nth-of-type(3) a{
+	/* font-size: 16px; */
+	top: 136px;
+	left: 15px;
+}
+#menu li:nth-of-type(2) {
+	background:url(../images/icon1.png) no-repeat;
+	background-size: contain;
+}
+#menu li:nth-of-type(3) {
+	background:url(../images/icon3.png) no-repeat;
+	background-size: contain;
+	width: 180px;
 }
 #menu li.active{
 	background:#666;
@@ -133,18 +235,18 @@ top: 38%;
 }
 #menu li a{
 	text-decoration:none;
-	color: #000;
+	color: #020202;
+	font-size: 22px;
+	font-weight: bold;
 }
 #menu li.active a:hover{
 	color: #000;
 }
-#menu li:hover{
-	background: rgba(255,255,255, 0.8);
-}
 #menu li a,
 #menu li.active a{
-	padding: 9px 18px;
 	display:block;
+	text-align: center;
+	position: absolute;
 }
 #menu li.active a{
 	color: #fff;
@@ -155,15 +257,16 @@ top: 38%;
 .fp-viewing-firstPage #menu{
 	transition: opacity 1s ease-out 0.5s;
 	opacity: 1;
-	height: 40px;
+	height: 210px;
 	z-index: 70;
 	padding: 0;
 	/* margin: 0; */
 	margin: 0 auto;
-	width: fit-content;
+	width: 100%;
 	position: absolute;
-	left: 32%;
-	top: 69%;
+	top: 62%;
+	display: flex;
+	justify-content: space-around;
 }
 /* Tab gtoup */
 
