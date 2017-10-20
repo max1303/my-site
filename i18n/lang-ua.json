@@ -1,5 +1,69 @@
 {
 	"tittle": "Мій сайт",
 	"btnUA": "UA",
-	"btnRU": "RU"
+	"btnRU": "RU",
+	"sectionTittle1": "Палітурні роботи",
+	"sectionTittle2": "Тиражування",
+	"sectionTittle3": "Ламінація, фальгування, тиснення під золото",
+	"slogan": "Якість ручної роботи",
+	"tel": "тел. 0981286317<br>тел. 0981286317",
+	"obj1": [
+		{
+			"title": "Особові справи",
+			"info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt nam amet laboriosam ipsam, ab sunt magnam earum. Asperiores facilis pariatur, omnis rerum sapiente libero et, molestiae maiores dolor qui, iste.",
+			"img": "images/bg1.jpg"
+		},
+		{
+			"title": "Папки під книги, журнали",
+			"info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt nam amet laboriosam ipsam, ab sunt magnam earum. Asperiores facilis pariatur, omnis rerum sapiente libero et, molestiae maiores dolor qui, iste.",
+			"img": "images/bg1.jpg"
+		},
+		{
+			"title": "Архівні папки",
+			"info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt nam amet laboriosam ipsam, ab sunt magnam earum. Asperiores facilis pariatur, omnis rerum sapiente libero et, molestiae maiores dolor qui, iste.",
+			"img": "images/bg1.jpg"
+		},
+		{
+			"title": "Архівні коробки",
+			"info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt nam amet laboriosam ipsam, ab sunt magnam earum. Asperiores facilis pariatur, omnis rerum sapiente libero et, molestiae maiores dolor qui, iste.",
+			"img": "images/bg1.jpg"
+		},
+		{
+			"title": "Дипломи",
+			"info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt nam amet laboriosam ipsam, ab sunt magnam earum. Asperiores facilis pariatur, omnis rerum sapiente libero et, molestiae maiores dolor qui, iste.",
+			"img": "images/bg1.jpg"
+		},
+		{
+			"title": "Посвідчення",
+			"info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt nam amet laboriosam ipsam, ab sunt magnam earum. Asperiores facilis pariatur, omnis rerum sapiente libero et, molestiae maiores dolor qui, iste.",
+			"img": "images/bg1.jpg"
+		}
+	],
+	"obj2": [
+		{
+			"title": "Книги",
+			"info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt nam amet laboriosam ipsam, ab sunt magnam earum. Asperiores facilis pariatur, omnis rerum sapiente libero et, molestiae maiores dolor qui, iste.",
+			"img": "images/bg1.jpg"
+		},
+		{
+			"title": "Журнали",
+			"info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt nam amet laboriosam ipsam, ab sunt magnam earum. Asperiores facilis pariatur, omnis rerum sapiente libero et, molestiae maiores dolor qui, iste.",
+			"img": "images/bg1.jpg"
+		},
+		{
+			"title": "Бланки",
+			"info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt nam amet laboriosam ipsam, ab sunt magnam earum. Asperiores facilis pariatur, omnis rerum sapiente libero et, molestiae maiores dolor qui, iste.",
+			"img": "images/bg1.jpg"
+		},
+		{
+			"title": "Картки",
+			"info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt nam amet laboriosam ipsam, ab sunt magnam earum. Asperiores facilis pariatur, omnis rerum sapiente libero et, molestiae maiores dolor qui, iste.",
+			"img": "images/bg1.jpg"
+		},
+		{
+			"title": "Методички",
+			"info": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt nam amet laboriosam ipsam, ab sunt magnam earum. Asperiores facilis pariatur, omnis rerum sapiente libero et, molestiae maiores dolor qui, iste.",
+			"img": "images/bg1.jpg"
+		}
+	]
 }

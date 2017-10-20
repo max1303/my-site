@@ -14,6 +14,7 @@
 
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
 	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+	
 
 	<script type="text/javascript" src="library/jquery.localize.min.js" ></script>
 	<script type="text/javascript" src="library/jquery.fullPage.min.js"></script>
@@ -25,79 +26,89 @@
 <div id="fullpage">
 	<div class="section active" id="section0">
 		<div class="intro">
+			<div class="logo"></div>
+			<div class="main-img">
+				<p class="tel" data-localize="tel"></p>
+				<div class="localize-wrapper">
+					<button class="localize-ua active" data-localize="btnUA"></button>
+					<button class="localize-ru" data-localize="btnRU"></button>
+				</div>
+			</div>
+
+			<h1 class="slogan" data-localize="slogan"></h1>
 			<ul id="menu">
 				<li data-menuanchor="secondPage"><a href="#secondPage">Second slide</a></li>
 				<li data-menuanchor="3rdPage"><a href="#3rdPage">Third slide</a></li>
 				<li data-menuanchor="4thpage"><a href="#4thpage">Fourth slide</a></li>
 			</ul>
-			<div class="localize-wrapper">
-				<button class="localize-ua" data-localize="btnUA"></button>
-				<button class="localize-ru" data-localize="btnRU"></button>
-			</div>
 			<!-- <h1 data-localize="tittle"></h1> -->
 		</div>
 	</div>
 	<div class="section" id="section1">
 		<div class="intro">
+		<h1 data-localize="sectionTittle1"></h1>
 			<div id="tabs">
-			    <ul>
-			        <li>
-			            <a href="#a">Tab A</a>
-			        </li>
-			        <li>
-			            <a href="#b">Tab B</a>
-			        </li>
-			        <li>
-			            <a href="#c">Tab C</a>
-			        </li>
-			        <li>
-			            <a href="#d">Tab D</a>
-			        </li>
-			    </ul>
+			    <ul id="tabsList"></ul>
 			    
-			   <div id="a">
-			        Content of A
-			    </div>
-			    <div id="b">
-			        Content of B
-			    </div>
-			    <div id="c">
-			        Content of C
-			    </div>
-			    <div id="d">
-			        Content of D
-			    </div>
+			    <div id="tab-content-wrap"></div>
 			</div>
 		</div>		
 	</div>
 	<div class="section" id="section2">
 		<div class="intro">
-			<h1>Example</h1>
-			<p>HTML markup example to define 4 sections.</p>
+			<h1 data-localize="sectionTittle2"></h1>
+			<div class="slide" id="slide0"></div>
+			<div class="slide" id="slide1"></div>
+			<div class="slide" id="slide2"></div>
+			<div class="slide" id="slide3"></div>
+			<div class="slide" id="slide4"></div>
 		</div>
 	</div>
 	<div class="section" id="section3">
 		<div class="intro">
-			<h1>Working On Tablets</h1>
-			<p>
-				Designed to fit to different screen sizes as well as tablet and mobile devices.
-			</p>
+			<h1 data-localize="sectionTittle3"></h1>
 		</div>
 	</div>
 </div>
 
+<script id="sliderTemplate" type="text/html">
+	<div class="slider">
+		<h1>{{=title}}</h1>
+	</div>
+</script>
+
 <script type="text/javascript" charset="utf-8">
       $(function(){
-
-      	$('#tabs')
-	    .tabs()
-	    .addClass('ui-tabs-vertical ui-helper-clearfix');
 
         var opts = { language: "ru", pathPrefix: "i18n", skipLanguage: "en-US" };
         if(1){
         	opts = { language: "ua", pathPrefix: "i18n", skipLanguage: "en-US" };
         }
-        $("[data-localize]").localize("lang",opts)
+        $("[data-localize]").localize("lang",opts);
+
+        function getJsonData(){
+		    var jqXHR = $.ajax({
+		        url: "i18n/lang-ua.json",
+		        async: false});
+
+		    return $.parseJSON(jqXHR.responseText);
+		}
+
+		var json = getJsonData();
+
+		json.obj1.forEach(function(item, i){
+			$("#tabsList").append("<li><a href='#tab"+ i +"'>"+ item.title +"</a></li>");
+			$("#tab-content-wrap").append("<div id='tab"+ i +"'><img class='product-img' src='"+ item.img +"'/><p class='info'>"+ item.info +"</p></div>");
+		})
+
+		json.obj2.forEach(function(item, i){
+			$("#slide"+ i).append("<div class='slide'><h1>"+ item.title+"</h1></div>");
+		})
+		
+
+	 	$('#tabs')
+	    .tabs()
+	    .addClass('ui-tabs-vertical ui-helper-clearfix');
       })
 </script>
 	

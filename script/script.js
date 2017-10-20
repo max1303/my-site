@@ -11,18 +11,18 @@ $(document).ready(function() {
 		// navigationTooltips: ['firstPage', 'secondPage', '3rdPage', '4thpage', 'lastPage'],
 
 		'afterLoad': function(anchorLink, index){
-			if(index == 2){
+			// if(index == 2){
 				
-			}
+			// }
 		},
 
 		'onLeave': function(index, nextIndex, direction){
-			if (index == 3 && direction == 'down'){
+			// if (index == 3 && direction == 'down'){
 				
-			}
-			else if(index == 3 && direction == 'up'){
+			// }
+			// else if(index == 3 && direction == 'up'){
 				
-			}
+			// }
 		}
 	});
 });
