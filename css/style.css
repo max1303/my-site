@@ -329,10 +329,10 @@ font-size: 22px;
 
 }
 .ui-tabs.ui-tabs-vertical .ui-tabs-panel .product-img{
-	
-height: 342px;
-	
-width: 100%;
+	height: 342px;
+	width: 40%;
+	margin: 0 auto;
+	display: block;
 }
 .ui-tabs #tab-content-wrap{
 	width: 63%;
