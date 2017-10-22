@@ -1,7 +1,7 @@
 /* Custom CSS
  * --------------------------------------- */
 body{
-	font-family: arial,helvetica;
+	font-family: 'Open Sans', arial, helvetica, sans-serif;
 	color: #333;
 	color: rgb(56, 56, 56);
 	/* background-color: rgba(228, 224, 215, 0.7) !important; */
@@ -9,6 +9,20 @@ body{
 	background-color: #fff;
 	background-blend-mode: color;
 	background-size: cover;
+}
+#trail {
+	position:  absolute;
+	left: 10%;
+	top: 56%;
+	background: #ffffff;
+	filter: blur(25px);
+	border: 1px solid #ffffff;
+	border-radius: 40px;
+	box-shadow: #ffffff 267px -165px 0px -8px, #ffffff 460px 45px 0px -35px, #ffffff 660px 20px 0px -16px, #ffffff 770px -125px 0px -19px, #ffffff 920px 10px 0px -28px;
+	height: 75px;
+	margin: 20px;
+	width: 75px;
+	z-index: -1;
 }
 .logo-wrapper{
 	position: absolute;
@@ -32,7 +46,7 @@ body{
 	font-size: 36px;
 	left: 114px;
 	font-weight: bold;
-	top: 226px;
+	top: 210px;
 	letter-spacing: -0.5px;
 	text-align: right;
 }
@@ -40,7 +54,7 @@ body{
 .text2{
 	font-size: 36px;
 	right: 76px;
-	top: 250px;
+	top: 235px;
 	font-weight: bold;
 }
 .logo-text{
@@ -130,11 +144,13 @@ p{
 	top: 0px;
 	height: 60.8%;
 	width: 100%;
-	background: url(../images/1.png) 50% 50% no-repeat;
+	background: url(../images/1.png), linear-gradient(to top, #0c0b58, #da5f9a);
+	/* 	background-image: url(../images/1.png); */
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
 	background-size: contain;
 	z-index: 0;
-	background-color: #3f405a;
-	/* border-bottom: 8px solid #f5f2ef; */
+	border-bottom: 3px solid #060f2b;
 }
 .slogan{
 	text-transform: uppercase;
@@ -145,7 +161,7 @@ p{
 	width: 100%;
 	top: 52.4%;
 	font-weight: bold;
-	color: #FFF;
+	color: #ececec;
 	background: rgba(236, 236, 236, 0.2);
 	padding: 14px 0;
 }
@@ -183,15 +199,16 @@ p{
 	margin-bottom: 4px;
 	font-size: 16px;
 	line-height: 1;
-	color: #119de2;
+	color: #1b76d2;
 	cursor: pointer;
+	font-weight: bold;
 }
 .works__item:hover, .works__item--active {
   
 }
 #menu li {
 	position: relative;
-	width: 220px;
+	width: 250px;
 	height: 276px;
 	display:inline-block;
 	color: #000;
@@ -199,9 +216,10 @@ p{
 	border-radius: 10px;
 	margin-right: 25px;
 	border-radius: 25px;
-	-webkit-box-shadow: 0 0 25px rgba(73,120,169,.27);
-	-moz-box-shadow: 0 0 25px rgba(73,120,169,.27);
-	box-shadow: 0 0 25px rgba(73,120,169,.27);
+	border: 2px solid #9fa1a7;
+	-webkit-box-shadow: 0 0 25px rgb(111, 103, 133);
+	-moz-box-shadow: 0 0 25px rgb(111, 103, 133);
+	box-shadow: 0 0 25px rgb(111, 103, 133);
 }
 #menu li:first-of-type {
 	background: url(../images/icon2.png) 50% no-repeat, #fff;
@@ -329,10 +347,14 @@ font-size: 22px;
 
 }
 .ui-tabs.ui-tabs-vertical .ui-tabs-panel .product-img{
-	height: 342px;
-	width: 40%;
-	margin: 0 auto;
-	display: block;
+	
+height: 342px;
+	
+width: 40%;
+	
+margin: 0 auto;
+	
+display: block;
 }
 .ui-tabs #tab-content-wrap{
 	width: 63%;
